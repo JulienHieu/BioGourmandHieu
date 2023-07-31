@@ -1,0 +1,288 @@
+header {
+    background-color: #83AF81; /* Vert clair */
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Centre la barre de recherche */
+.search-bar {
+    flex-grow: 1; /* La barre de recherche prendra toute la largeur restante */
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer les éléments horizontalement */
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #D3D3D3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.logo {
+    /* Ajoutez ici la taille, la position et autres styles pour votre logo */
+}
+
+.logo img {
+    max-width: 200px; /* Ajustez la taille du logo selon vos besoins */
+}
+.nav {
+    background-color: #4D6D52; /* Vert foncé */
+    padding: 10px;
+}
+
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-links li {
+    margin-right: 20px;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu-links a:hover {
+    background-color: #56876B; /* Vert légèrement plus clair au survol */
+    text-decoration: none;
+}
+
+/* Sous-menu Nos Produits */
+.menu-links li.submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4D6D52; /* Vert foncé */
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-links li.submenu:hover .submenu {
+    display: block;
+}
+
+.submenu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.submenu-item:hover {
+    background-color: #56876B; /* Vert légèrement plus clair au survol */
+}
+/* ... Autres styles ... */
+
+/* Styles pour le footer */
+.footer-container {
+    background-color: #83AF81; /* Vert clair */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.footer-info h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-social h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-social li {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    background-color: #4D6D52; /* Vert foncé */
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+/* ... Autres styles ... */
+
+/* Styles spécifiques pour la page Nos Produits */
+/* ... Autres styles ... */
+
+/* Styles spécifiques pour la page Nos Produits */
+.products-container {
+    padding: 20px;
+    text-align: center;
+    display: flex; /* Utilisation de flexbox pour aligner les produits côte à côte */
+    flex-wrap: wrap; /* Permet le retour à la ligne des produits en cas de manque d'espace */
+    justify-content: center; /* Centrer les produits horizontalement */
+}
+
+.product-item {
+    width: 300px; /* Largeur fixe pour chaque produit */
+    margin: 10px; /* Marge autour de chaque produit */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* ... Autres styles ... */
+
+/* Styles spécifiques pour la page Panier */
+.cart-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.cart-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.cart-item h2 {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.cart-item .price {
+    font-size: 18px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#clear-cart {
+    background-color: #4D6D52; /* Vert foncé */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#clear-cart:hover {
+    background-color: #56876B; /* Vert légèrement plus clair au survol */
+}
+
+/* ... Autres styles ... */
+
+/* Styles pour la fenêtre modale de confirmation de paiement */
+#payment-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+}
+
+/* ... Autres styles ... */
+
